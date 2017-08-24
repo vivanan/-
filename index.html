@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<title>营养餐</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/yyc.css">
+<script src="./js/zepto.min.js"></script>
+<script src="./js/fx.js"></script>
+<script src="./js/yyc.js"></script>
+<script>
+(function (doc, win) {
+   var docEl = doc.documentElement,
+         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+         recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if(clientWidth>=640){
+               docEl.style.fontSize = '100px';
+            }else{
+               docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            }
+         };
+   if (!doc.addEventListener) return;
+   win.addEventListener(resizeEvt, recalc, false);
+   doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+
+</script>
+
+</head>
+
+<body>
+    <header class="clearfix">
+        <a href="javascript:;" class="header-back fl"></a>
+        <h3 class="header-tit fl">健康饮食</h3>
+        <section class="header-menu fl"></section>
+    </header>
+    <section class="box">
+        <nav class="top_box">
+            <ul class="nav-time clearfix">
+                <li class="fl active">早餐</li>
+                <li class="fl">午餐</li>
+                <li class="fl">晚餐</li>
+                <span class="line"></span>
+            </ul>
+        </nav>
+        <section class="nav_mid clearfix">
+            <section class="content-box clearfix">
+                <nav class="fl con-nav">
+                    <ul>
+                        <li class="on">主食</li>
+                        <li>一般人群</li>
+                        <li>高血压患者</li>
+                        <li>糖尿病患者</li>
+                        <li>心血管疾病</li>
+                        <li>消化道患者</li>
+                        <li>营养不良者</li>
+                        <li>术后调养</li>
+                    </ul>
+
+                </nav>
+                <section class="con-right fl">
+                    <div class="con-rightBox on1">
+                        <h4>高血压患者1</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者2</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者3</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者4</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者5</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者6</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者7</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者8</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="content-box clearfix">
+                <nav class="fl con-nav">
+                    <ul>
+                        <li class="on">主食</li>
+                        <li>一般人群</li>
+                        <li>高血压患者</li>
+                        <li>糖尿病患者</li>
+                        <li>心血管疾病</li>
+                        <li>消化道患者</li>
+                        <li>营养不良者</li>
+                        <li>术后调养</li>
+                    </ul>
+
+                </nav>
+                <section class="con-right fl">
+                    <div class="con-rightBox on1">
+                        <h4>高血压患者1</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者2</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+            <section class="content-box clearfix">
+                <nav class="fl con-nav">
+                    <ul>
+                        <li class="on">主食</li>
+                        <li>一般人群</li>
+                        <li>高血压患者</li>
+                        <li>糖尿病患者</li>
+                        <li>心血管疾病</li>
+                        <li>消化道患者</li>
+                        <li>营养不良者</li>
+                        <li>术后调养</li>
+                    </ul>
+
+                </nav>
+                <section class="con-right fl">
+                    <div class="con-rightBox on1">
+                        <h4>高血压患者1</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="con-rightBox">
+                        <h4>高血压患者2</h4>
+                        <ul class="foot-detail">
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/1.jpg" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">玉米百合鲜虾仁</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜嫩浓郁  </p>
+                                        <p><span>禁忌人群：</span>风寒咳嗽、脾虚便溏忌食。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/2.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>发热、牙痛、口舌生疮、咳吐黄痰等上火症状者不宜食用。</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/3.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者慎食；有阳亢及热性病症的人</p>
+                                    </section>
+                                </section>
+                            </li>
+                            <li>
+                                <section class="clearfix">
+                                    <img src="./img/4.png" alt="" class="fl foot-detail-img">
+                                    <section class="fl foot-detail-right">
+                                        <section class="clearfix">
+                                            <h5 class="fl">韭菜鸡蛋</h5>
+                                            <a href="yyc-detail.html" class="go fr"></a>
+                                        </section>
+                                        <p><span>菜品描述：</span>鲜咸可口、醋香味浓。</p>
+                                        <p><span>禁忌人群：</span>高热、腹泻、肝炎、肾炎、胆囊炎、冠心病患者忌食；患有眼疾者</p>
+                                    </section>
+                                </section>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </section>
+
+    </section>
+</body>
+</html>

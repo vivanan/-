@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+<meta content="yes" name="apple-mobile-web-app-capable">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta content="telephone=no" name="format-detection">
+<meta content="email=no" name="format-detection">
+<meta name="renderer" content="webkit">
+<title>营养餐</title>
+<link rel="stylesheet" href="./css/reset.css">
+<link rel="stylesheet" href="./css/detail.css">
+<script>
+(function (doc, win) {
+   var docEl = doc.documentElement,
+         resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+         recalc = function () {
+            var clientWidth = docEl.clientWidth;
+            if (!clientWidth) return;
+            if(clientWidth>=640){
+               docEl.style.fontSize = '100px';
+            }else{
+               docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+            }
+         };
+   if (!doc.addEventListener) return;
+   win.addEventListener(resizeEvt, recalc, false);
+   doc.addEventListener('DOMContentLoaded', recalc, false);
+})(document, window);
+
+</script>
+</head>
+
+<body>
+    <header class="clearfix">
+        <a href="javascript:;" class="header-back fl"></a>
+        <h3 class="header-tit fl">安贞医院-营养餐</h3>
+        <section class="header-menu fl"></section>
+    </header>
+    <section>
+        <section class="banner"></section>
+        <p class="banner-text">焦溜丸子</p>
+    </section>
+    <section class="recipe">猪肉200g、木耳100g、柿子椒100g、胡萝卜50g</section>
+    <section class="con-detail">
+        <ul>
+            <li class="con-list clearfix">
+                <h5 class="fl">菜品描述</h5>
+                <p class="fl">咸鲜微酸、外焦里嫩。</p>
+            </li>
+            <li class="con-list clearfix">
+                <h5 class="fl">营养成分</h5>
+                <p class="fl">三大热能营养素   蛋白质：29.4克
+                   <br> 脂肪：84.49克    碳水化合物：18.65克
+                   <br> 热能：952.61千卡</p>
+            </li>
+            <li class="con-list clearfix">
+                <h5 class="fl">禁忌人群</h5>
+                <p class="fl">湿热痰滞内蕴者、外感病人忌食；肥胖、血脂较高、高血压者慎食。</p>
+            </li>
+            <li class="con-list clearfix">
+                <h5 class="fl">适宜人群</h5>
+                <p class="fl">一般人都可食用。适宜阴虚不足，头晕，贫血，老人燥咳无痰，大便干结，以及营养不良者食用。</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
